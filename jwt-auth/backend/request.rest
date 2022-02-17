@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQxLCJuYW1lIjoiQWRpa2EiLCJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNjQ0OTg3MDAyLCJleHAiOjE2NDQ5ODcwMTd9.9tM6-SCh7f6ZsytoAL5wPc96TWNCw-jOfOuBZuhdsM0
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Adika",
+    "email": "a@gmail.com",
+    "password": "222",
+    "confPassword": "222"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"a@gmail.com",
+    "password": "222"
+}
+
+###
+POST http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
